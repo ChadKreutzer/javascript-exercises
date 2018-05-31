@@ -1,26 +1,14 @@
-function add () {
-	
-}
+const add = (a, b) => a + b;
 
-function subtract () {
-	
-}
+const subtract = (a, b) => a - b;
 
-function sum () {
-	
-}
+const sum = arr => arr.reduce((a,b) => a + b, 0);
 
-function multiply () {
-	
-}
+const multiply = arr => arr.reduce((a,b) => a * b);
 
-function power() {
-	
-}
+const power = (base, exp) => multiply(Array(exp).fill(base));
 
-function factorial() {
-	
-}
+const factorial = num => (num === 0) ? 1 : multiply(Array.from(Array(num).keys(), (_,x) => x + 1));
 
 module.exports = {
 	add,
